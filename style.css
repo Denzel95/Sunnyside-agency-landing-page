@@ -1,40 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
-
-:root {
-  /* Primary */
-  --Soft-red: hsl(7, 99%, 70%);
-  --Yellow: hsl(51, 100%, 49%);
-  --Darkdesaturated-cyan: hsl(167, 40%, 24%);
-  --Dark-blue: hsl(198, 62%, 26%);
-  --Dark-moderate-cyan: hsl(168, 34%, 41%);
-
-  /* Neutral */
-  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
-  --Dark-grayish-blue: hsl(232, 10%, 55%);
-  --Grayish-blue: hsl(210, 4%, 67%);
-  --White: hsl(0, 0%, 100%);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.8rem;
-  font-family: "Barlow";
-  font-weight: 600;
-}
-
 .header {
-  width: 100%;
+  max-width: 144rem;
   height: 80rem;
   background-image: url("./images/desktop/image-header.jpg");
   background-size: cover;
@@ -42,7 +7,7 @@ body {
 }
 
 .head {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,10 +45,6 @@ body {
   color: #fff;
 }
 
-.heading {
-  font-family: "Fraunces";
-  font-weight: 900;
-}
 .primary-heading {
   text-align: center;
   margin-top: 10rem;
@@ -106,11 +67,71 @@ body {
   transform: translateY(100%);
 }
 
-.container-2-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.food {
+  max-width: 100%;
 }
 
-.container {
+.container-width {
   width: 100%;
+  height: 100%;
+}
+
+.img-width {
+  width: 100%;
+}
+
+.text {
+  /* padding: 16.6rem 8.4rem 15.5rem 15.5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  padding: 20%;
+}
+
+.secondary-heading {
+  text-align: left;
+  width: 50%;
+}
+
+.description {
+  line-height: 1.4;
+  width: 45ch;
+  text-align: left;
+  color: var(--Grayish-blue);
+}
+
+.head-aud {
+  width: 70%;
+}
+
+.chery-box,
+.orange-box {
+  position: relative;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.chery-box p {
+  /* color: var(--Dark-grayish-blue); */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.centered p {
+  width: 37ch;
+  line-height: 1.6;
+}
+
+.testimonials {
+  width: 100%;
+  background-color: var(--Soft-red);
 }
