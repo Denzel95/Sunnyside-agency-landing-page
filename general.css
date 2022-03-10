@@ -42,15 +42,10 @@ body {
 }
 
 .container {
-  max-width: 144rem;
+  /* min-width: 144rem; */
 }
 
 .container-2-cols {
-  display: grid;
-  max-width: 100%;
-  height: 180rem;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container-3-cols {
@@ -63,6 +58,7 @@ body {
 
 .link {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
